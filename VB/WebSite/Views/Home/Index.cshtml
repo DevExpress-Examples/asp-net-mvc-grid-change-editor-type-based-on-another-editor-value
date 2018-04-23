@@ -1,0 +1,8 @@
+@model List<DXWebApplication1.Models.Person>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+<p> Try to type 'newperson' in the FirstName field </p>
+@Html.Partial("GridViewPartial", Model)
