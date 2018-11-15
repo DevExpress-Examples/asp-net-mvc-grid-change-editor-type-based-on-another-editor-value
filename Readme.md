@@ -1,3 +1,13 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [HomeController.cs](./CS/WebSite/Controllers/HomeController.cs) (VB: [HomeController.vb](./VB/WebSite/Controllers/HomeController.vb))
+* [Person.cs](./CS/WebSite/Models/Person.cs) (VB: [Person.vb](./VB/WebSite/Models/Person.vb))
+* [PersonsList.cs](./CS/WebSite/Models/PersonsList.cs) (VB: [PersonsList.vb](./VB/WebSite/Models/PersonsList.vb))
+* [MyScript.js](./CS/WebSite/Scripts/MyScript.js) (VB: [MyScript.js](./VB/WebSite/Scripts/MyScript.js))
+* [GridViewPartial.cshtml](./CS/WebSite/Views/Home/GridViewPartial.cshtml)
+* [Index.cshtml](./CS/WebSite/Views/Home/Index.cshtml)
+<!-- default file list end -->
 # MVC GridView - How to change an EditForm editor's type depending on another editor's value
 
 
