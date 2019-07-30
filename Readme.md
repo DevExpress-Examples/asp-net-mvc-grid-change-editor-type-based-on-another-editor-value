@@ -10,7 +10,7 @@
 <!-- default file list end -->
 # MVC GridView - How to change an EditForm editor's type depending on another editor's value
 <!-- run online -->
-**[[Run Online]](https://codecentral.devexpress.com/e4825)**
+**[[Run Online]](https://codecentral.devexpress.com/e4825/)**
 <!-- run online end -->
 
 
