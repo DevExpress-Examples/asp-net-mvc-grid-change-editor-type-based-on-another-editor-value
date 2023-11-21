@@ -28,7 +28,7 @@ In this example, the type of `LastName` column editor changes from _textbox_ to 
 }
 ```
 
-It is impossible to bind two editors placed on one form to the same field (in this case, their `Name` property will be equal, which is forbidden), thats why a hidden field is used to store values and transfer them to the server.
+It is impossible to bind two editors placed on one form to the same field (in this case, their `Name` property will be equal, which is forbidden). This is why a hidden field is used to store values and transfer them to the server.
 
 ```jscript
 function ChangeHiddenValue(s, e) { 
