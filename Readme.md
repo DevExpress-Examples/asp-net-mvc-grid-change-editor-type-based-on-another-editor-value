@@ -8,7 +8,7 @@
 **[[Run Online]](https://codecentral.devexpress.com/e4825/)**
 <!-- run online end -->
 
-This example demonstrates how to change an editor type for a certain field based on the value of another editor in the edit form. 
+This example demonstrates how to change the editor type for a certain field based on the value of another editor in the edit form. 
 
 ![](grid-edit-form.png)
 
