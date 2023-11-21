@@ -9,13 +9,13 @@
 **[[Run Online]](https://codecentral.devexpress.com/e4825/)**
 <!-- run online end -->
 
-This example demonstrates how to change an editor type for a certain field based on the value of another editor in edit form. 
+This example demonstrates how to change an editor type for a certain field based on the value of another editor in the edit form. 
 
 ![](grid-edit-form.png)
 
 ## Implementation Details
 
-In this example, the type of `LastName` column editor changes from textbox to combobox when the `FirstName` editor value equals 'newperson'.
+In this example, the type of `LastName` column editor changes from _textbox_ to _combobox_ when the `FirstName` editor value equals `newperson`.
 
 ```jscript
 ﻿function onTextChanged(s, e) {
