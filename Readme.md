@@ -6,7 +6,7 @@
 
 # Grid View for ASP.NET MVC - How to change an editor's type based on another editor's value
 <!-- run online -->
-**[[Run Online]](https://codecentral.devexpress.com/e4825/)**
+**[[Run Online]](https://codecentral.devexpress.com/128552131/)**
 <!-- run online end -->
 
 This example demonstrates how to change the editor type for a certain field based on the value of another editor in the edit form. 
