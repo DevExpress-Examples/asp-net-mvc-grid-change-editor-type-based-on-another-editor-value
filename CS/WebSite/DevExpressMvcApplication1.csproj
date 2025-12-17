@@ -217,4 +217,20 @@
   <ItemGroup>
     <Content Include="packages.config" />
   </ItemGroup>
+  <!-- NuGet Package Restore for CI/CD -->
+  <PropertyGroup>
+    <RestorePackages>true</RestorePackages>
+  </PropertyGroup>
+  <Target Name="RestorePackages" BeforeTargets="Build">
+    <PropertyGroup>
+      <NuGetExePath Condition="'$(NuGetExePath)' == ''">nuget.exe</NuGetExePath>
+      <PackagesConfig>$(MSBuildProjectDirectory)\packages.config</PackagesConfig>
+      <PackagesDir>$(MSBuildProjectDirectory)\..\packages</PackagesDir>
+    </PropertyGroup>
+    <Message Text="Restoring NuGet packages from $(PackagesConfig)" Importance="high" />
+    <!-- Download nuget.exe if it doesn't exist -->
+    <Exec Command="powershell -Command &quot;if (!(Test-Path '$(NuGetExePath)')) { Invoke-WebRequest -Uri 'https://dist.nuget.org/win-x86-commandline/latest/nuget.exe' -OutFile '$(NuGetExePath)' -UseBasicParsing }&quot;" Condition="!Exists('$(NuGetExePath)')" ContinueOnError="false" />
+    <!-- Restore packages -->
+    <Exec Command="&quot;$(NuGetExePath)&quot; restore &quot;$(PackagesConfig)&quot; -PackagesDirectory &quot;$(PackagesDir)&quot; -NonInteractive" Condition="Exists('$(PackagesConfig)')" ContinueOnError="false" />
+  </Target>
 </Project>
